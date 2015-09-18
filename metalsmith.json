@@ -1,0 +1,30 @@
+{
+  "source": "",
+  "destination": "",
+  "plugins": {
+    "metalsmith-markdown": false,
+    "metalsmith-templates": "handlebars",
+    "metalsmith-register-partials":
+    {
+      "directory":""
+    },
+    "metalsmith-sass":
+    {
+        "files":"",
+        "includePaths":"",
+        "outputDir":""
+    },
+    "metalsmith-postcss": {
+        "input": "",
+        "output": "",
+        "autoprefixer": {
+            "browsers": "> 5%"
+        },
+    },
+    "metalsmith-concat":
+    {
+      "files":[],
+      "dest":""
+    }
+  }
+}
