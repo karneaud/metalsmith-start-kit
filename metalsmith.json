@@ -10,7 +10,6 @@
     }
   },
   "plugins": {
-    "metalsmith-markdown":false,
     "metalsmith-in-place":
     {
       "engine":"handlebars",
