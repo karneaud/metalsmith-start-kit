@@ -31,12 +31,8 @@
     },
     "metalsmith-ignore":[]
   },
-    "metalsmith-postcss": {
-        "input": "",
-        "output": "",
-        "autoprefixer": {
-            "browsers": "> 5%"
-        },
+    "metalsmith-autoprefixer": {
+        "browsers": "> 5%"
     },
     "metalsmith-browser-sync":
     {
