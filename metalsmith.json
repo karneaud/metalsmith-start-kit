@@ -21,7 +21,7 @@
       "engine": "handlebars",
       "default": "/path/to/default/file.html",
       "directory": "/path/to/look/into/for/layouts/directory/",
-      "partials":"path/to/look/into/for/partials/directory"
+      "partials":"path/to/look/into/for/partials/directory",
       "patterns":"*.md"
     },
     "metalsmith-sass":
