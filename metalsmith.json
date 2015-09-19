@@ -1,12 +1,12 @@
 {
-  "source": "",
-  "destination": "",
+  "source": "./path/to/src",
+  "destination": "./path/to/build",
   "clean":true,
   "metadata": {
     "site": {
       "title": "",
       "url": "",
-      "author": ""
+      "author": "",
     }
   },
   "plugins": {
@@ -14,35 +14,33 @@
     "metalsmith-templates": "handlebars",
     "metalsmith-register-partials":
     {
-      "directory":"",
+      "directory":"path/to/partials",
       "engine":"handlebars"
     },
     "metalsmith-sass":
     {
-        "files":[],
-        "includePaths":[],
-        "outputDir":"",
-        "watch":""
+        "files":["*.scss"],
+        "includePaths":["path/to/sass/folder"],
+        "outputDir":"css",
+        "watch":"*.scss"
     },
     "metalsmith-autoprefixer":
     {
       "files":{
-        "":""
+        "build/css/style.css":"style.css"
       },
       "browsers":"last 8 versions"
     },
     "metalsmith-concat":
     {
-      "files":[],
-      "output":""
+      "files":["path/to/js/files"],
+      "output":"js/bundle.js"
     },
-    "metalsmith-ignore":[]
-    ,
-    "metalsmith-browser-sync":
-    {
+    "metalsmith-ignore":[".git",".gitignore","README.md",".json"],
+    "metalsmith-browser-sync":{
       "proxy":"",
       "port":8080,
-      "watch":""
+      "files":""
     }
   }
 }
