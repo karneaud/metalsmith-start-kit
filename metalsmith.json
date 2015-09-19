@@ -11,11 +11,18 @@
   },
   "plugins": {
     "metalsmith-markdown":false,
-    "metalsmith-templates": "handlebars",
-    "metalsmith-register-partials":
+    "metalsmith-in-place":
     {
-      "directory":"path/to/partials",
-      "engine":"handlebars"
+      "engine":"handlebars",
+      "partials":"path/to/partials",
+      "pattern": "*.md"
+    },
+    "metalsmith-layouts": {
+      "engine": "handlebars",
+      "default": "/path/to/default/file.html",
+      "directory": "/path/to/look/into/for/layouts/directory/",
+      "partials":"path/to/look/into/for/partials/directory"
+      "patterns":"*.md"
     },
     "metalsmith-sass":
     {
