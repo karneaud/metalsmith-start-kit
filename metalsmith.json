@@ -1,12 +1,12 @@
 {
-  "source": "./src",
-  "destination": "./build",
+  "source": "",
+  "destination": "",
   "clean":true,
   "metadata": {
     "site": {
-      "title": "Keetology",
-      "url": "http://keetology.com",
-      "author": "Mark \"Keeto\" Obcena"
+      "title": "",
+      "url": "",
+      "author": ""
     }
   },
   "plugins": {
@@ -14,22 +14,22 @@
     "metalsmith-templates": "handlebars",
     "metalsmith-register-partials":
     {
-      "directory":"src/templates/partials",
+      "directory":"",
       "engine":"handlebars"
     },
     "metalsmith-sass":
     {
-        "files":["src/libs/sassarch/*.scss"],
-        "includePaths":["src/libs/sassarch"],
+        "files":[],
+        "includePaths":[],
         "outputDir":"css",
-        "watch":"src/libs/sassarch/*.scss"
+        "watch":""
     },
     "metalsmith-concat":
     {
-      "files":["libs/jquery/dist/jquery.js","libs/modernizr/modernizr.js","js/*.js"],
-      "output":"js/bundle.js"
+      "files":[],
+      "output":""
     },
-    "metalsmith-ignore":["libs/**","templates/**","libs/**/.*","templates/**/.*",".git",".gitignore","*.md",".json"]
+    "metalsmith-ignore":[]
   },
     "metalsmith-postcss": {
         "input": "",
